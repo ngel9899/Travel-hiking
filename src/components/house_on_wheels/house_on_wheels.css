@@ -1,0 +1,144 @@
+.HouseOnWheels {
+  height: 680px;
+  background-color: #2a3950;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.HouseOnWheels-container {
+  width: 50%;
+  height: 100%;
+}
+
+.HouseOnWheels-img {
+  padding: 120px 50px 0 188px;
+}
+.HouseOnWheels-img img {
+  width: 100%;
+  height: 100%;
+}
+
+.HouseOnWheels-text {
+  padding: 127px 150px 0 50px;
+}
+.HouseOnWheels-text h3 {
+  font-family: "Segoe-normal";
+  color: #FFFFFF;
+  font-size: 44px;
+}
+.HouseOnWheels-text h3:first-child {
+  font-size: 38px;
+  opacity: 70%;
+}
+.HouseOnWheels-text p {
+  padding-bottom: 25px;
+  opacity: 70%;
+  font-family: "Segoe-600";
+  font-size: 20px;
+  line-height: 26px;
+  color: #FFFFFF;
+}
+
+.HouseOnWheels-button-container {
+  padding: 50px 0 0 50px;
+}
+
+.HouseOnWheels-button {
+  padding: 20px 48px;
+  background-color: #00E0C7;
+  color: #2A3950;
+  font-family: "Segoe-bold";
+  border: 1px solid #1f4559;
+  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 8px;
+}
+.HouseOnWheels-button:hover {
+  background-color: #03b5a0;
+}
+.HouseOnWheels-button:active {
+  background-color: #03b5a0;
+  -webkit-transform: translateY(2px);
+          transform: translateY(2px);
+}
+
+@media screen and (max-width: 1700px) {
+  .HouseOnWheels-text h3 {
+    font-size: 34px;
+  }
+  .HouseOnWheels-text h3:first-child {
+    font-size: 28px;
+  }
+  .HouseOnWheels-img {
+    height: 75%;
+  }
+}
+@media screen and (max-width: 1440px) {
+  .HouseOnWheels-text h3 {
+    font-size: 26px;
+  }
+  .HouseOnWheels-text h3:first-child {
+    font-size: 20px;
+  }
+  .HouseOnWheels-text p {
+    font-size: 18px;
+  }
+  .HouseOnWheels-button-container {
+    padding: 10px 0 0 50px;
+  }
+  .HouseOnWheels-img {
+    padding: 120px 50px 0 50px;
+    width: 100%;
+  }
+}
+@media screen and (max-width: 1140px) {
+  .HouseOnWheels-text {
+    padding: 127px 50px 0 50px;
+  }
+  .HouseOnWheels-text h3 {
+    font-size: 22px;
+  }
+  .HouseOnWheels-text h3:first-child {
+    font-size: 18px;
+  }
+  .HouseOnWheels-text p {
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: 880px) {
+  .HouseOnWheels-text {
+    padding: 127px 50px 0 25px;
+  }
+  .HouseOnWheels-img {
+    padding: 120px 25px 0 0;
+  }
+}
+@media screen and (max-width: 650px) {
+  .HouseOnWheels-text {
+    padding: 127px 50px 0 50px;
+  }
+  .HouseOnWheels-text h3 {
+    font-size: 18px;
+  }
+  .HouseOnWheels-text h3:first-child {
+    font-size: 14px;
+  }
+  .HouseOnWheels-text p {
+    font-size: 12px;
+  }
+  .HouseOnWheels-img {
+    padding: 120px 0 0 0;
+  }
+  .HouseOnWheels-img img {
+    height: 80%;
+  }
+}
+@media screen and (max-width: 530px) {
+  .HouseOnWheels-left {
+    display: none;
+  }
+  .HouseOnWheels-container {
+    width: 100%;
+  }
+}

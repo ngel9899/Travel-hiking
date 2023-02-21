@@ -1,0 +1,64 @@
+@import "../font/variables"
+
+.main
+  height: 905px
+  background-image: url($way-img + 'bg.png')
+  background-repeat: no-repeat
+
+.main-container
+  padding: 162px 20%
+
+.main-title
+  text-align: center
+  h1
+    font-family: $font-400
+    font-size: 84px
+    color: $text-main-color
+
+.main-text
+  padding-top: 20px
+  text-align: center
+  p
+    font-family: $font-400
+    font-size: 20px
+    Line-height: 26px
+    color: $text-main-color
+
+.main-container-button
+  text-align: center
+  padding-top: 50px
+
+.main-button
+  padding: 18px 52px
+  color: #FFFFFF
+  background-color: #2a3950
+  font-family: $font-bold
+  border: 1px solid #1f4559
+  box-shadow: 0px 10px 47px rgba(0, 0, 0, 0.3)
+  border-radius: 10px
+  &:hover
+    background-color: #1c2635
+  &:active
+    background-color: #1c2635
+    transform: translateY(2px)
+
+@media screen and (max-width: 1120px)
+  .main-title
+    h1
+      font-size: 60px
+  .main-text
+    p
+      font-size: 18px
+      Line-height: 22px
+
+
+@media screen and (max-width: 800px)
+  .main-title
+    h1
+      font-size: 50px
+
+
+@media screen and (max-width: 670px)
+  .main-title
+    h1
+      font-size: 44px

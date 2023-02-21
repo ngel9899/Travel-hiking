@@ -1,0 +1,73 @@
+.main {
+  height: 905px;
+  background-image: url("../../../public/img/bg.png");
+  background-repeat: no-repeat;
+}
+
+.main-container {
+  padding: 162px 20%;
+}
+
+.main-title {
+  text-align: center;
+}
+.main-title h1 {
+  font-family: "Segoe-normal";
+  font-size: 84px;
+  color: #006270;
+}
+
+.main-text {
+  padding-top: 20px;
+  text-align: center;
+}
+.main-text p {
+  font-family: "Segoe-normal";
+  font-size: 20px;
+  Line-height: 26px;
+  color: #006270;
+}
+
+.main-container-button {
+  text-align: center;
+  padding-top: 50px;
+}
+
+.main-button {
+  padding: 18px 52px;
+  color: #FFFFFF;
+  background-color: #2a3950;
+  font-family: "Segoe-bold";
+  border: 1px solid #1f4559;
+  -webkit-box-shadow: 0px 10px 47px rgba(0, 0, 0, 0.3);
+          box-shadow: 0px 10px 47px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+}
+.main-button:hover {
+  background-color: #1c2635;
+}
+.main-button:active {
+  background-color: #1c2635;
+  -webkit-transform: translateY(2px);
+          transform: translateY(2px);
+}
+
+@media screen and (max-width: 1120px) {
+  .main-title h1 {
+    font-size: 60px;
+  }
+  .main-text p {
+    font-size: 18px;
+    Line-height: 22px;
+  }
+}
+@media screen and (max-width: 800px) {
+  .main-title h1 {
+    font-size: 50px;
+  }
+}
+@media screen and (max-width: 670px) {
+  .main-title h1 {
+    font-size: 44px;
+  }
+}

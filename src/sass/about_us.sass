@@ -1,0 +1,77 @@
+@import "../font/variables"
+
+.about_us
+  background-color: #ceffe2
+  padding: 100px 150px
+
+.about_us-container
+  display: flex
+  justify-content: space-evenly
+
+.about_us-text
+  width: 50%
+
+.about_us-map
+  width: 50%
+  height: 700px
+
+.about_us-text
+  h3
+    font-size: 1.6rem
+    font-family: $font-bold
+    margin-bottom: 20px
+  h4
+    font-size: 20px
+    font-family: $font-bold
+    margin-bottom: 20px
+
+.about_us-for_tourists
+  padding-bottom: 25px
+  p
+    padding-left: 32px
+    font-family: $font-400
+    font-size: 16px
+  span:before
+    @include before_img
+    background-image: url($way-img + "phone.png")
+
+.about_us-operating_departments
+  padding-bottom: 25px
+  div
+    padding-bottom: 10px
+  p
+    padding-left: 32px
+    font-family: $font-400
+    font-size: 16px
+  span:before
+    @include before_img
+    background-image: url($way-img + "email.png")
+
+.about_us-contact
+  p
+    padding: 0 0 15px 32px
+    font-family: $font-400
+    font-size: 16px
+
+.about_us-contact-location:before
+  @include before_img
+  background-image: url($way-img + "location.png")
+
+.about_us-contact-clock:before
+  @include before_img
+  background-image: url($way-img + "clock.png")
+
+
+@media screen and (max-width: 940px)
+  .about_us-container
+    display: block
+
+  .about_us-text
+    width: 100%
+
+  .about_us-map
+    width: 100%
+
+@media screen and (max-width: 620px)
+  .about_us
+    padding: 50px

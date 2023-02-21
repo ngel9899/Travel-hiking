@@ -1,0 +1,46 @@
+@import "../font/variables"
+
+.istoriyaTurizma
+  background-color: #264257
+  background-image: url($way-img + "bg-istoria.png")
+  padding: 100px 150px
+  h1,p
+    color: #FFFFFF
+
+.istoriyaTurizma-text-top
+  h1
+    text-align: center
+    font-family: $font-600
+    font-size: 40px
+    padding-bottom: 30px
+  p
+    @include text
+
+.istoriyaTurizma-img
+  display: flex
+  justify-content: space-between
+
+.istoriyaTurizma-text-bot
+  margin-left: 20px
+  @include text
+
+
+@media screen and (max-width: 1650px)
+  .istoriyaTurizma-img
+    display: block
+    img
+      max-height: 900px
+
+  .istoriyaTurizma-text-bot
+    padding: 15px 0 0 0
+    margin-left: 0
+
+@media screen and (max-width: 960px)
+  .istoriyaTurizma-img
+    max-width: 770px
+    img
+      max-width: 100%
+
+@media screen and (max-width: 790px)
+  .istoriyaTurizma
+    padding: 100px 50px

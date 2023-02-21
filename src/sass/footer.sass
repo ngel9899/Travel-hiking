@@ -1,0 +1,66 @@
+@import "../font/variables"
+
+.footer
+  height: 353px
+  background-color: #006270
+
+.footer-description
+  padding-top: 45px
+  display: flex
+  justify-content: space-evenly
+
+.footer-text
+  padding-top: 30px
+  color: #FFFFFF
+  font-family: $font-400
+  text-align: center
+
+.footer-links-container
+  width: 70%
+  display: flex
+  justify-content: space-evenly
+
+.footer-links
+  a
+    display: block
+    text-decoration: none
+    color: #FFFFFF
+    opacity: 70%
+    margin-bottom: 20px
+    font-family: $font-400
+  p
+    color: #FFFFFF
+    opacity: 100%
+    text-decoration: underline
+    margin-bottom: 25px
+  a:last-child
+    margin-bottom: 0
+  a:hover
+    opacity: 100%
+
+#active
+  opacity: 100%
+  &:hover
+    opacity: 80%
+
+
+@media screen and (max-width: 940px)
+  .footer-logo
+    img
+      width: 200px
+
+@media screen and (max-width: 710px)
+  .footer-description
+    display: block
+  .footer-logo-container
+    display: flex
+    justify-content: space-evenly
+
+
+  .footer-links-container
+    width: 100%
+    margin-top: 20px
+
+  .footer-links
+    p
+      display: none

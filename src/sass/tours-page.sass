@@ -1,0 +1,195 @@
+@import "../font/variables"
+
+.tours-page
+  background: linear-gradient(45deg, rgb(223, 206, 179), rgb(80, 136, 167), rgb(180, 182, 168))
+  padding: 100px 150px
+  color: #FFFFFF
+
+.tours-page-hat
+  text-align: center
+
+
+.tour-hat-slider
+  position: relative
+  display: flex
+  width: 100%
+  height: auto
+  padding: 50px 60px 0 60px
+
+
+.tour-hat-slider .slick-arrow
+  position: absolute
+  top: 50%
+  margin: -20px 0 0 0
+  z-index: 2
+  font-size: 0
+  width: 100px
+  height: 100px
+
+.tour-hat-slider .slick-arrow.slick-prev
+  left: 10px
+  border: 0
+  background: url($way-img + 'back.png') 0 0 / 100% no-repeat
+
+.tour-hat-slider .slick-arrow.slick-next
+  right: 0
+  border: 0
+  background: url($way-img + 'next.png') 0 0 / 100% no-repeat
+
+.tour-page-slider-img
+  padding: 0px 10px
+  img
+    max-width: 100%
+    width: 430px
+    height: 420px
+
+.tour-hat-title
+  display: flex
+  justify-content: space-around
+  padding-bottom: 30px
+  h2
+    padding: 5px
+    font-family: $font-600
+    font-size: 32px
+    line-height: 26px
+    text-decoration: underline
+  p
+    font-family: $font-400
+    font-size: 18px
+    padding: 5px 10px
+    border: 1px solid
+
+.tour-hat-data
+  text-align: right
+  font-size: 16px
+  padding-bottom: 20px
+  opacity: 90%
+
+.tour-hat-top
+  padding-bottom: 25px
+  font-family: $font-600
+  font-size: 24px
+  line-height: 26px
+
+
+.tours-page-body
+  h1
+    padding: 15px 0
+    font-family: $font-600
+    font-size: 34px
+    line-height: 26px
+  h3
+    padding-bottom: 15px
+    font-family: $font-400
+    font-size: 22px
+
+.tours-body-text
+  padding-bottom: 15px
+  font-family: $font-400
+  font-size: 18px
+
+.tours-body-text-border
+  font-family: $font-400
+  font-size: 18px
+  padding: 30px
+  border: 1px solid
+
+.tours-body-ul
+  padding-top: 20px
+  li
+    margin-left: 50px
+    font-family: $font-400
+    font-size: 16px
+
+.tour-page-form
+  padding: 30px
+  margin-top: 20px
+  border: 1px solid
+  width: 40%
+  legend
+    font-family: $font-400
+    font-size: 22px
+    padding-bottom: 10px
+  button
+    padding: 10px 40px
+    margin-top: 20px
+    color: #FFFFFF
+    background-color: #2a3950
+    font-family: $font-600
+    border: 1px solid #1f4559
+    box-shadow: 0px 10px 47px rgb(0 0 0 / 30%)
+    border-radius: 10px
+    &:hover
+      background-color: #1c2635
+    &:active
+      background-color: #1c2635
+      transform: translateY(2px)
+
+.page-form-group
+  label
+    font-family: $font-400
+    font-size: 18px
+  input
+    display: block
+    margin-top: 5px
+    width: 40%
+    padding: 5px
+
+#loader
+  width: 350px
+  margin-top: 25px
+  margin-left: auto
+
+.toursButton:disabled
+  opacity: 0.5
+  cursor: not-allowed
+  &:hover
+    background-color: #2a3950
+  &:active
+    background-color: #2a3950
+    transform: none
+
+@media screen and (max-width: 1180px)
+  .tour-page-form
+    width: 60%
+  .tour-page-form
+    width: 70%
+  .page-form-group
+    input
+      width: 70%
+
+@media screen and (max-width: 980px)
+  .tours-page
+    padding: 50px 70px
+
+  .tour-page-form
+    width: 100%
+
+@media screen and (max-width: 640px)
+  .tour-hat-top
+    font-size: 20px
+  .tours-page-body
+    h1
+      font-size: 28px
+    h3
+      font-size: 18px
+
+  .tours-body-text
+    font-size: 16px
+  .tours-body-text-borde
+    font-size: 16px
+
+  .tours-page
+    padding: 50px 30px
+
+  .tour-hat-slider
+    padding: 30px 20px 0 20px
+
+@media screen and (max-width: 440px)
+  .page-form-group
+    input
+      width: 90%
+
+  .tour-page-slider-img
+    img
+      height: 290px

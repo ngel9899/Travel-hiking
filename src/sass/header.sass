@@ -1,0 +1,104 @@
+@import "../font/variables"
+
+.header
+  height: 100px
+  background-color: rgb(230,250,239)
+  display: flex
+
+.header-left
+  width: 50%
+
+.header-logo
+  padding: 14px 0 14px 150px
+
+.header-right
+  width: 50%
+
+.header-right-container
+  display: flex
+  padding: 25px 150px
+  justify-content: space-evenly
+  a
+    text-decoration: none
+    color: $text-header-color
+
+
+.container-corporate
+  height: 40px
+  padding: 5px 50px 10px 0
+  display: flex
+  justify-content: space-evenly
+  &:after
+    display: inline-block
+    position: relative
+    bottom: 10px
+    left: 25px
+    content: url($way-img + "rectangle-header.png")
+
+
+.container-corporate-img
+  width: 50%
+  margin-right: 10px
+
+.header-container-text
+  width: 100%
+  a
+    h5
+      font-family: $font-600
+      font-size: 18px
+    p
+      white-space: nowrap
+      font-family: $font-400
+      font-size: 12px
+
+.header-container-agent
+  height: 40px
+  padding: 5px 50px 10px 0
+  display: flex
+  justify-content: space-evenly
+
+.container-agent-img
+  margin-right: 10px
+
+.header-container-button
+  margin-top: 5px
+
+.header-button
+  padding: 11px 44px
+  background-color: #2a3950
+  color: #FFFFFF
+  font-family: $font-bold
+  border: 1px solid #1f4559
+  box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.1)
+  border-radius: 8px
+  &:hover
+    background-color: #1c2635
+  &:active
+    background-color: #1c2635
+    transform: translateY(2px)
+
+@media screen and (max-width: 1440px)
+  .header-left
+    width: 30%
+  .header-right
+    width: 70%
+  .header-right-container
+    padding: 25px 50px
+
+  .header-logo
+    padding: 14px 0 14px 70px
+
+@media screen and (max-width: 1010px)
+  .header-right-container
+    display: none
+
+@media screen and (max-width: 480px)
+  .header-logo
+    padding: 20px 0 14px 20px
+    img
+      width: 160px
+
+@media screen and (max-width: 480px)
+  .header-logo
+    img
+      width: 140px

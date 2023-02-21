@@ -1,0 +1,191 @@
+.ticket-cards {
+  padding: 100px 150px;
+  background: linear-gradient(45deg, rgb(88, 154, 139), rgb(115, 193, 195), rgb(217, 221, 194));
+}
+
+.ticket-cards-cell {
+  max-width: 1500px;
+  margin: 10px 0;
+  padding: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.ticket-cards-slider {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 480px;
+  height: 350px;
+}
+
+.ticket-cards-slider .slick-arrow {
+  position: absolute;
+  top: 40%;
+  margin: -5px 0 0 0;
+  z-index: 2;
+  font-size: 0;
+  width: 100px;
+  height: 100px;
+}
+
+.ticket-cards-slider .slick-arrow.slick-prev {
+  opacity: 50%;
+  left: -10px;
+  border: 0;
+  background: url("../../../public/img/back.png") 0 0/100% no-repeat;
+}
+
+.ticket-cards-slider .slick-arrow.slick-next {
+  opacity: 50%;
+  right: -10px;
+  border: 0;
+  background: url("../../../public/img/next.png") 0 0/100% no-repeat;
+}
+
+.ticket-cards-main {
+  text-align: center;
+}
+
+.ticket-cards-item {
+  padding: 0px 15px;
+  text-align: center;
+}
+.ticket-cards-item img {
+  max-width: 100%;
+}
+
+.ticket-cards-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+.ticket-cards-title a {
+  padding: 5px;
+  font-family: "Segoe-600";
+  font-size: 24px;
+  line-height: 26px;
+  text-decoration: underline;
+  color: black;
+}
+.ticket-cards-title p {
+  font-family: "Segoe-normal";
+  font-size: 18px;
+  opacity: 70%;
+  padding: 5px;
+  border: 1px solid;
+}
+
+.ticket-cards-text {
+  font-family: "Segoe-600";
+  font-size: 20px;
+  line-height: 26px;
+  padding-top: 30px;
+  color: #164d60;
+}
+
+.ticket-cards-container-button {
+  max-height: 40%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.ticket-cards-button {
+  padding: 20px 46px;
+  background-color: #31bf54;
+  color: #2A3950;
+  font-family: "Segoe-bold";
+  border: 1px solid #1f4559;
+  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 8px;
+}
+.ticket-cards-button:hover {
+  background-color: #03b5a0;
+}
+.ticket-cards-button:active {
+  background-color: #03b5a0;
+  -webkit-transform: translateY(2px);
+          transform: translateY(2px);
+}
+
+@media screen and (max-width: 1610px) {
+  .ticket-cards-container-button {
+    max-height: 20%;
+  }
+}
+@media screen and (max-width: 1295px) {
+  .ticket-cards-cell {
+    margin-bottom: 30px;
+  }
+}
+@media screen and (max-width: 1180px) {
+  .ticket-cards-text {
+    font-size: 16px;
+    line-height: 22px;
+  }
+  .ticket-cards-title {
+    display: block;
+  }
+  .ticket-cards-title p {
+    margin-top: 15px;
+  }
+  .ticket-cards {
+    padding-left: 50px;
+  }
+}
+@media screen and (max-width: 1040px) {
+  .ticket-cards {
+    padding: 80px 50px;
+  }
+}
+@media screen and (max-width: 870px) {
+  .ticket-cards-slider {
+    max-width: 360px;
+  }
+  .ticket-cards-slider .slick-arrow {
+    margin: -60px 0 0 0;
+  }
+}
+@media screen and (max-width: 700px) {
+  .ticket-cards-cell {
+    display: block;
+  }
+  .ticket-cards-slider .slick-arrow {
+    margin: -5px 0 0 0;
+  }
+  .ticket-cards-slider {
+    max-height: 260px;
+    max-width: 480px;
+  }
+  .ticket-cards-main {
+    padding-top: 15px;
+  }
+}
+@media screen and (max-width: 590px) {
+  .ticket-cards-slider {
+    width: 360px;
+  }
+  .ticket-cards-slider .slick-arrow {
+    margin: -20px 0 0 0;
+  }
+  .ticket-cards {
+    padding-left: 30px;
+  }
+}
+@media screen and (max-width: 430px) {
+  .ticket-cards {
+    padding: 10px;
+  }
+}
